@@ -37,6 +37,7 @@ import cmp_bookpedia.composeapp.generated.resources.favorites
 import cmp_bookpedia.composeapp.generated.resources.no_favorite_book
 import cmp_bookpedia.composeapp.generated.resources.no_search_results
 import cmp_bookpedia.composeapp.generated.resources.search_results
+import com.plcoding.bookpedia.book.domain.Book
 import com.plcoding.bookpedia.book.presentation.book_list.components.BookList
 import com.plcoding.bookpedia.book.presentation.book_list.components.BookSearchBar
 import com.plcoding.bookpedia.core.presentation.DarkBlue
@@ -48,8 +49,7 @@ import org.koin.compose.viewmodel.koinViewModel
 @Composable
 fun BookListScreenRoot(
     viewModel: BookListViewModel = koinViewModel(),
-    onBookClick: () -> Unit,
-    modifier: Modifier = Modifier
+    onBookClick: (Book) -> Unit
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
@@ -57,7 +57,7 @@ fun BookListScreenRoot(
         state = state,
         onAction = { action ->
             when (action) {
-                is BookListAction.OnBookClick -> onBookClick()
+                is BookListAction.OnBookClick -> onBookClick(action.book)
                 else -> Unit
             }
             viewModel.onAction(action)

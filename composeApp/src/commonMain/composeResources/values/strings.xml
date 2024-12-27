@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <resources>
-    <string name="search_hint">Search for books...</string>">
-    <string name="close_hint">Clear Book Search</string>">
-    <string name="search_results">Search Results</string>">
-    <string name="favorites">Favorites</string>">
-    <string name="no_search_results">No Matching Results</string>">
-    <string name="no_favorite_book">No Favorite Book</string>">
+    <string name="search_hint">Search for books...</string>
+    <string name="close_hint">Clear Book Search</string>
+    <string name="search_results">Search Results</string>
+    <string name="favorites">Favorites</string>
+    <string name="no_search_results">No Matching Results</string>
+    <string name="no_favorite_book">No Favorite Book</string>
 
-    <string name="error_disk_full">Error: Disk Full</string>">
-    <string name="error_unknown">Error: Unknown</string>">
-    <string name="error_request_timeout">Error: Request Timeout</string>">
-    <string name="error_no_internet">Error: No Internet, Check Your Internet</string>">
-    <string name="error_too_many_request">Error: Quota exceeded, please try again later</string>">
-    <string name="error_serialization">Error: Couldn't parse data</string>">
+    <string name="error_disk_full">Error: Disk Full</string>
+    <string name="error_unknown">Error: Unknown</string>
+    <string name="error_request_timeout">Error: Request Timeout</string>
+    <string name="error_no_internet">Error: No Internet, Check Your Internet</string>
+    <string name="error_too_many_request">Error: Quota exceeded, please try again later</string>
+    <string name="error_serialization">Error: Couldn't parse data</string>
+
+    <string name="book_cover">Book Cover Image</string>
+    <string name="ratings">Rating</string>>
+    <string name="pages">Pages</string>
+    <string name="languages">Language</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="description_unavailable">Description not available</string>
+    <string name="go_back">Go Back</string>
+    <string name="mark_as_favorite">Mark as Favorite</string>
+    <string name="remove_from_favorite">Remove from Favorite</string>
+
 </resources>
