@@ -33,9 +33,9 @@ class BookListViewModel(
     private val _state = MutableStateFlow(BookListState())
     val state = _state
         .onStart {
-            if (cachedBooks.isEmpty()) [
+            if (cachedBooks.isEmpty()) {
                 observeSearchQuery()
-            ]
+            }
         }
         .stateIn(
             viewModelScope,
