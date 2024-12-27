@@ -5,7 +5,7 @@ import com.plcoding.bookpedia.book.domain.Book
 
 fun SearchedBookDto.toBook(): Book {
     return Book(
-        id = id,
+        id = id.substringAfterLast("/"),
         title = title,
         imageUrl = if(coverKey != null) {
             "https://covers.openlibrary.org/b/olid/${coverKey}-L.jpg"
@@ -14,7 +14,7 @@ fun SearchedBookDto.toBook(): Book {
         },
         authors = authorNames?: emptyList(),
         description = null,
-        language = languages?: emptyList(),
+        languages = languages?: emptyList(),
         firstPublishYear = firstPublishYear.toString(),
         averageRating = ratingsAverage,
         ratingCount = ratingsCount,
