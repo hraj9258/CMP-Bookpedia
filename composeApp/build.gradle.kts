@@ -47,7 +47,7 @@ kotlin {
             implementation(libs.koin.android)
             implementation(libs.koin.androidx.compose)
             implementation(libs.ktor.client.okhttp)
-            implementation(compose.material3)
+
         }
         commonMain.dependencies {
             implementation(compose.runtime)

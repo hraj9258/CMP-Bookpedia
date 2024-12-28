@@ -2,7 +2,6 @@ package com.plcoding.bookpedia.book.data.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.plcoding.bookpedia.book.domain.Book
 
 @Entity
 data class BookEntity(
