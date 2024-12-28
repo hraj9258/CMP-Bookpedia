@@ -17,7 +17,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.outlined.Favorite
+import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ElevatedCard
@@ -177,7 +177,7 @@ fun BlurredImageBackground(
                                     Icon(
                                         imageVector = if (isFavorite) {
                                             Icons.Filled.Favorite
-                                        } else Icons.Outlined.Favorite,
+                                        } else Icons.Outlined.FavoriteBorder,
                                         contentDescription =
                                         if (isFavorite) {
                                             stringResource(Res.string.remove_from_favorite)
